@@ -202,11 +202,19 @@ header {
 	align-items: center;
 	margin: 20px 0;
 
+	/* background-color: orange; */
 }
 
 .services .services-header-img {
-
+	margin-top: 78px;
 }
+
+.services header nav a:last-child{
+	margin-left: 75px;
+}
+
+.services header nav a {color: gray;}
+
 
 .services .intro {
 
@@ -231,7 +239,7 @@ header {
 	width: 47.5%;
 	margin: 20px 0;
 	border: 1px black solid;
-	background-color: lightgray;
+	background-color: #F3F3F3;
 	font-size: 1.1rem;
 	padding: 30px 40px 20px 20px;
 }
