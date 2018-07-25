@@ -65,13 +65,15 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
-body {
+/* body {
 	margin: 0 7.5%;
 	border: solid black 1px;
-}
+} */
 
 header {
+	display: flex;
 	position: fixed;
+	justify-content: space-between;
 	top: 0;
 	width: 100%;
 	background-color: white;
@@ -84,25 +86,15 @@ header {
 	margin-top: 2%;
 }
 
-.header-nav a {
-}
-
-a:first-of-type {
-		margin-left: 0;
-}
-
 .logo {
-	display: inline-block;
-	margin-left: 10%;
-	background-image: url("../img/logo.png");
-	height: 36px;
-	width: 183px;
-	background-repeat: no-repeat;
-
-
+	justify-content: flex-end;
 }
+
+
 
 .main {
+	display: flex;
+	flex-wrap: nowrap;
 	padding: 10% 0;
 	border-bottom: 1px black solid;
 	text-align: center;
@@ -150,36 +142,37 @@ a:first-of-type {
 
 }
 
-.article { /*individual article*/
-	display: inline-block;
-	padding: 0 1%;
+.articles-row-1, .articles-row-2 {
+	display: flex;
+	justify-content: space-between;
 }
 
-.article h3, .article p {
+.article {
 	font-size: 1.2rem;
 }
 
-.article.features, .article.about{
-		width: 49%;
-}
-
-.article.services, .article.product, .article.vision {
-	width: 32%;
-}
 
 .middle-img{
 	width: 100%;
 	padding: 5% 0;
 }
 
+
+
 .footer {
 	padding: 5% 0;
 	font-size: 1.2rem;
-	line-height: 1.5rem;
+	line-height: 1.2rem;
+}
+
+.address{
+	display: flex;
+	justify-content: flex-start;
 }
 
 .copyright {
 	padding: 10%;
-	text-align: center;
-	display: block;
+	justify-content: center;
+	display: flex;
+	font-size: 1rem;
 }
