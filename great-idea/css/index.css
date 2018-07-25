@@ -65,25 +65,30 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
-/* body {
+body {
 	margin: 0 7.5%;
-	border: solid black 1px;
-} */
+	max-width: 1000px;
+	/* height: 100%; */
+	/* border: solid black 1px; */
+}
 
 header {
-	display: flex;
-	position: fixed;
-	justify-content: space-between;
+
+
 	top: 0;
-	width: 100%;
+	/* width: 100%; */
 	background-color: white;
 }
 
 .header-nav {
+	margin: 10px 0;
 	display: flex;
 	justify-content: space-between;
-	/* text-align: left; */
-	margin-top: 2%;
+	align-items: baseline;
+}
+
+.header-nav a{
+	text-decoration: none;
 }
 
 .logo {
@@ -137,7 +142,7 @@ header {
 }
 
 .articles{ /*the section*/
-	padding: 7.5% 0;
+	padding: 40px 0;
 	border-bottom: 1px black solid;
 
 }
@@ -175,4 +180,126 @@ header {
 	justify-content: center;
 	display: flex;
 	font-size: 1rem;
+}
+
+/* ################### */
+/* SERVICES START HERE */
+/* ################### */
+
+.services .services-header-img {
+	width: 100%;
+}
+
+.services header {
+	position: fixed;
+	top: 0;
+	overflow: none;
+	width: 1000px;
+}
+.services header nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 0;
+
+}
+
+.services .services-header-img {
+
+}
+
+.services .intro {
+
+	padding: 20px 0 40px 0;
+	border-bottom: 3px solid black;
+}
+
+.services .intro h2 {
+		font-size: 1.25rem;
+}
+
+.services .articles{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	border-bottom: 3px black solid;
+}
+
+
+.services .article {
+	color: black;
+	width: 47.5%;
+	margin: 20px 0;
+	border: 1px black solid;
+	background-color: lightgray;
+	font-size: 1.1rem;
+	padding: 30px 40px 20px 20px;
+}
+
+.services .article h3 {
+	font-size: 1.25rem;
+	margin-bottom: 25px;
+}
+
+.services .article p {
+	margin-bottom: 20px;
+}
+
+.services button {
+	background-color: white;
+	font-size: .8em;
+	border: 1px solid black;
+	border-radius: 5%;
+	width: 150px;
+	height: 40px;
+	margin-top: 20px;
+
+}
+
+
+
+.services .prefooter{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin-top: 50px;
+	line-height: 1.5rem;
+}
+
+.services .prefooter div{
+	width: 47.5%;
+	font-size: 1.1rem;
+}
+
+.services .prefooter img{
+	width: 100%;
+}
+
+.services .prefooter h3{
+margin-bottom: 30px;
+}
+
+.services ul {
+	list-style: square;
+	list-style-position: inside;
+	line-height: 2rem;
+}
+
+.services .fact-list{
+	order: 1
+}
+
+.services footer {
+	margin-top: 100px;
+	display: block;
+	text-align: center;
+}
+
+@media  (max-width: 578px){
+	.services .article {
+		width: 100%;
+}
+
+.services .prefooter div{
+	width: 100%;
 }
