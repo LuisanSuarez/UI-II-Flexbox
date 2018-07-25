@@ -186,9 +186,7 @@ header {
 /* SERVICES START HERE */
 /* ################### */
 
-.services .services-header-img {
-	width: 100%;
-}
+
 
 .services header {
 	position: fixed;
@@ -201,13 +199,13 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	margin: 20px 0;
-
-	/* background-color: orange; */
 }
 
 .services .services-header-img {
+	width: 100%;
 	margin-top: 78px;
 }
+
 
 .services header nav a:last-child{
 	margin-left: 75px;
@@ -304,10 +302,21 @@ margin-bottom: 30px;
 }
 
 @media  (max-width: 578px){
+
+
 	.services .article {
 		width: 100%;
 }
 
-.services .prefooter div{
-	width: 100%;
+	.services .prefooter div{
+		width: 100%;
+}
+
+	.services header {
+
+		width: 520px;
+	}
+	.services header nav a:last-child{
+		margin-left: 0px;
+	}
 }
